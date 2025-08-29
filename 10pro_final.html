@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>石田美空のWebサイト</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <h1>石田美空のWebサイト</h1>
+      <p>緩和ケア看護学分野・血液がん看護の大学院生</p>
+    </header>
+
+    <nav>
+      <a href="#about">自己紹介</a>
+      <a href="#research">研究内容</a>
+      <a href="#publications">論文</a>
+      <a href="#activities">活動実績</a>
+      <a href="#hobbies">趣味</a>
+    </nav>
+
+    <section id="about" class="fade-in">
+      <h2>自己紹介</h2>
+      <img src="profile.jpg" alt="プロフィール写真" class="profile-pic" />
+      <p>
+        こんにちは、石田美空（みく）です。東北大学大学院 医学系研究科 保健学専攻
+        緩和ケア看護学分野に所属しており、2025年度修士2年です。修士課程では、人工知能を用いた電子カルテ記録からの緩和ケアの質評価に取り組んでいます。
+        将来的には血液がん患者さんの終末期医療・緩和ケアに関する研究を通して、血液がん患者さんに貢献できればと思っています。
+      </p>
+      <h3>経歴</h3>
+      <ul>
+        <li>静岡県静岡市（旧清水市）出身</li>
+        <li>2017年3月 - 静岡県立清水東高等学校 卒業</li>
+        <li>2017年4月 - 東北大学医学部保健学科看護学専攻 入学</li>
+        <li>2021年3月 - 東北大学医学部保健学科看護学専攻 卒業</li>
+        <li>
+          2021年4月 -
+          静岡県立静岡がんセンター　血液・幹細胞移植科で看護師として勤務
+        </li>
+        <li>
+          2024年4月 - 東北大学大学院医学系研究科保健学専攻緩和ケア看護学分野
+          入学
+        </li>
+      </ul>
+    </section>
+
+    <section id="research" class="fade-in">
+      <h2>研究内容</h2>
+      <ul>
+        <li>電子カルテを用いた緩和ケアの質評価</li>
+        <li>人工知能を活用した緩和ケアの質評価</li>
+        <li>造血器腫瘍患者の終末期医療の実態調査（予定）</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="fade-in">
+      <h2>論文・刊行物</h2>
+      <ul>
+        <li>
+          <strong>学会発表:</strong> 石田美空, 五十嵐尚子, 升川研人 ほか.
+          日本と英国のホスピス・緩和ケア病棟における死亡前後のケアの質比較.
+          第26回日本緩和医療学会学術大会, 2021 Jun, 横浜&Web
+          <p class="subtext">
+            日本と英国の緩和ケアの質を比較した研究で、死亡前後のケアの違いを分析しました。
+          </p>
+        </li>
+        <li>
+          <strong>ニューズレター:</strong>
+          <a
+            href="https://www.jspm.ne.jp/publication/newsletter/individual.html?entry_id=2046"
+            target="_blank"
+          >
+            石田美空. 在宅療養を受ける進行がん患者に対するVR介入試験.
+            日本緩和医療学会ニューズレター 105号, 2024年11月
+          </a>
+        </li>
+        <li>
+          <strong>雑誌記事:</strong>
+          <a
+            href="https://webview.isho.jp/journal/detail/abs/10.15106/j_kango30_342"
+            target="_blank"
+          >
+            石田美空. 予後予測と看取り期のケア. がん看護 30巻4号, 342-346
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="activities" class="fade-in">
+      <h2>活動実績</h2>
+      <ul>
+        <li>平成29年度学生顕彰[教育貢献部門]（2018年3月12日）</li>
+        <li>平成30年度学生顕彰[教育貢献部門]（2019年3月13日）</li>
+        <li>令和2年度学生顕彰[教育貢献部門]（2021年3月10日）</li>
+        <li>東北大学医学部保健学科看護学専攻英語賞 金賞（2019年・2020年）</li>
+        <li>東北大学グローバルリーダー育成プログラム修了（2018年7月20日）</li>
+        <li>東北大学グローバルリーダー認定（2019年8月8日）</li>
+        <p class="subtext">
+          東北大学独自のプログラムで、海外留学や語学能力試験の条件を満たして認定されました。
+        </p>
+      </ul>
+    </section>
+
+    <section id="hobbies" class="fade-in">
+      <h2>趣味</h2>
+      <p>
+        アイドルのライブ鑑賞（いぎなり東北産、Hello!
+        Project）や英語学習、映画鑑賞、YouTube視聴も楽しんでいます。特にいぎなり東北産では<span
+          class="favorite-idol"
+          >北美梨寧</span
+        >さんを応援しています。
+      </p>
+    </section>
+
+    <footer>&copy; 2025 石田美空</footer>
+
+    <script>
+      // スクロールでフェードイン
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        appearOnScroll
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("appear");
+          appearOnScroll.unobserve(entry.target);
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>

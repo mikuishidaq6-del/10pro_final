@@ -1,0 +1,101 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5; /* 薄めピンク */
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffb6c1;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #ff99aa;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ff7f8f;
+}
+
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: #ff99aa;
+  border-bottom: 2px solid #ffe6f0;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.profile-pic {
+  float: right;
+  width: 150px;
+  border-radius: 12px;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #ff99aa;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .profile-pic {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+}
+.favorite-idol {
+  color: purple;
+  font-weight: bold; /* 好きな場合は太字も */
+}
